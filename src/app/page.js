@@ -19,6 +19,9 @@ export default function Home() {
   return (
     <main className="bg-black text-white min-h-screen p-6">
       <h1 className="text-4xl font-bold">🏋️ Fitnara</h1>
+      <h1 className="hero-title">
+        Your next <span className="highlight">workout</span> starts right here.
+      </h1>
 
       <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
         {gyms.map((gym) => (
