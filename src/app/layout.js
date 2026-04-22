@@ -26,8 +26,30 @@ const dmSans = DM_Sans({
 });
 
 export const metadata = {
-  title: "Fitnara",
-  description: "Fitness for everyone",
+  title: "Fitnara – Discover the Best Gyms in India",
+  description: "Find and explore top-rated gyms near you across India. Fitnara helps you discover fitness centres, compare ratings, and start your workout journey today.",
+  metadataBase: new URL("https://fitnara.in"),
+  openGraph: {
+    title: "Fitnara – Discover the Best Gyms in India",
+    description: "Find and explore top-rated gyms near you across India. Fitnara helps you discover fitness centres, compare ratings, and start your workout journey today.",
+    url: "https://fitnara.in",
+    siteName: "Fitnara",
+    locale: "en_IN",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Fitnara – Discover the Best Gyms in India",
+    description: "Find and explore top-rated gyms near you across India.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
 };
 
 export default function RootLayout({ children }) {
