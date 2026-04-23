@@ -12,11 +12,12 @@ const dmSans = DM_Sans({ subsets: ["latin"], variable: "--font-dm", weight: ["30
 export const metadata = {
   title: "Fitnara – Discover Fitness Centers Across India",
   description: "Find gyms, yoga studios, pilates, crossfit, boxing, zumba, swimming and dance centers near you across India. Fitnara helps you discover the best fitness spaces in your city.",
-  metadataBase: new URL("https://fitnara.in"),
+  metadataBase: new URL("https://www.fitnara.in"),
+  alternates: { canonical: "/" },
   openGraph: {
     title: "Fitnara – Discover Fitness Centers Across India",
     description: "Find gyms, yoga studios, pilates, crossfit, boxing, zumba, swimming and dance centers near you across India.",
-    url: "https://fitnara.in",
+    url: "https://www.fitnara.in",
     siteName: "Fitnara",
     locale: "en_IN",
     type: "website",
