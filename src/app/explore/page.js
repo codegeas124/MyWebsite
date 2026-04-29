@@ -176,11 +176,19 @@ function ExploreContent() {
                   display: "flex", alignItems: "center", justifyContent: "center",
                   fontSize: "40px", position: "relative", overflow: "hidden",
                 }}>
-                  <div style={{
-                    position: "absolute", inset: 0,
-                    background: `radial-gradient(circle at 30% 40%, ${getColor(center.category)}18, transparent 60%)`,
-                  }} />
-                  {getIcon(center.category)}
+                  {center.image_url ? (
+                    <img
+                      src={center.image_url}
+                      alt={center.name}
+                      style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }}
+                    />
+                  ) : (
+                    <div style={{
+                      position: "absolute", inset: 0,
+                      background: `radial-gradient(circle at 30% 40%, ${getColor(center.category)}18, transparent 60%)`,
+                    }} />
+                  )}
+                  {!center.image_url && getIcon(center.category)}
                   <span className={`tag ${getBadge(center.category)}`} style={{ position: "absolute", top: "12px", left: "12px", textTransform: "capitalize" }}>
                     {center.category || "Gym"}
                   </span>
@@ -195,8 +203,8 @@ function ExploreContent() {
                   </p>
                   <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
                     <span className="stars">
-                      {"★".repeat(Math.round(center.rating || 4))}
-                      {"☆".repeat(5 - Math.round(center.rating || 4))}
+                      {"★".repeat(Math.max(0, Math.min(5, Math.round(center.rating || 4))))}
+                      {"☆".repeat(Math.max(0, 5 - Math.min(5, Math.round(center.rating || 4))))}
                     </span>
                     <span style={{ color: "var(--text-muted)", fontSize: "12px" }}>{center.rating || 4.0} / 5</span>
                   </div>
