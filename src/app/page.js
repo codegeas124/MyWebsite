@@ -112,6 +112,11 @@ function PlaceholderCard({ idx }) {
   )
 }
 
+export const metadata = {
+  alternates: { canonical: "/" },
+  openGraph: { url: "https://www.fitnara.in" },
+}
+
 export default async function Home() {
   const centers = await getFeaturedCenters()
   const showPlaceholders = centers.length === 0

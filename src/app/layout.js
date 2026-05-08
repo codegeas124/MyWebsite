@@ -13,19 +13,19 @@ export const metadata = {
   title: "Fitnara – Discover Fitness Centers Across India",
   description: "Find gyms, yoga studios, pilates, crossfit, boxing, zumba, swimming and dance centers near you across India. Fitnara helps you discover the best fitness spaces in your city.",
   metadataBase: new URL("https://www.fitnara.in"),
-  alternates: { canonical: "/" },
   openGraph: {
     title: "Fitnara – Discover Fitness Centers Across India",
     description: "Find gyms, yoga studios, pilates, crossfit, boxing, zumba, swimming and dance centers near you across India.",
-    url: "https://www.fitnara.in",
     siteName: "Fitnara",
     locale: "en_IN",
     type: "website",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Fitnara – Discover Fitness Centers Across India" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Fitnara – Discover Fitness Centers Across India",
     description: "Find gyms, yoga studios, pilates, crossfit and more near you across India.",
+    images: ["/og-image.png"],
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
 };

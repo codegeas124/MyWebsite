@@ -98,7 +98,7 @@ export default function Footer() {
         <div className="divider" />
         <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", paddingTop: "24px", gap: "12px" }}>
           <p style={{ color: "var(--text-muted)", fontSize: "13px", margin: 0 }}>
-            © 2025 Fitnara. Making India Fit.
+            © {new Date().getFullYear()} Fitnara. Making India Fit.
           </p>
           <p style={{ color: "var(--text-muted)", fontSize: "13px", margin: 0 }}>
             Built with ❤️ for India
