@@ -18,7 +18,7 @@ const TEAM = [
 
 export default function AboutPage() {
   return (
-    <div style={{ paddingTop: "80px" }}>
+    <div style={{ paddingTop: "116px" }}>
       {/* Hero */}
       <section style={{
         minHeight: "70vh", display: "flex", alignItems: "center",

@@ -3,6 +3,23 @@ import { useState, useEffect } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 
+function UnderConstructionBanner() {
+  return (
+    <div style={{
+      background: "#b6f36a",
+      color: "#080808",
+      textAlign: "center",
+      fontSize: "13px",
+      fontWeight: 600,
+      padding: "8px 16px",
+      letterSpacing: "0.02em",
+      width: "100%",
+    }}>
+      🚧 Fitnara is under construction — some features may not work yet. Stay tuned!
+    </div>
+  )
+}
+
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
@@ -21,13 +38,15 @@ export default function Navbar() {
   ]
 
   return (
-    <nav style={{
-      position: "fixed", top: 0, left: 0, right: 0, zIndex: 1000,
-      background: scrolled ? "rgba(8,8,8,0.92)" : "transparent",
-      backdropFilter: scrolled ? "blur(20px)" : "none",
-      borderBottom: scrolled ? "1px solid var(--border)" : "1px solid transparent",
-      transition: "all 0.3s ease",
-    }}>
+    <>
+      <UnderConstructionBanner />
+      <nav style={{
+        position: "fixed", top: 36, left: 0, right: 0, zIndex: 1000,
+        background: scrolled ? "rgba(8,8,8,0.92)" : "transparent",
+        backdropFilter: scrolled ? "blur(20px)" : "none",
+        borderBottom: scrolled ? "1px solid var(--border)" : "1px solid transparent",
+        transition: "all 0.3s ease",
+      }}>
       <div className="container" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", height: "68px" }}>
         
         {/* Logo */}
@@ -102,5 +121,6 @@ export default function Navbar() {
         }
       `}</style>
     </nav>
+    </>
   )
 }

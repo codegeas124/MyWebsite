@@ -79,7 +79,7 @@ function ExploreContent() {
   const getColor = (cat) => CAT_COLORS[cat?.toLowerCase()] || "#b6f36a"
 
   return (
-    <div style={{ paddingTop: "100px", minHeight: "100vh" }}>
+    <div style={{ paddingTop: "136px", minHeight: "100vh" }}>
       {/* Header */}
       <div style={{
         borderBottom: "1px solid var(--border)",

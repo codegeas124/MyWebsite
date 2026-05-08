@@ -124,7 +124,7 @@ export default async function Home() {
   return (
     <>
       {/* HERO */}
-      <section style={{ minHeight: "100vh", display: "flex", flexDirection: "column", justifyContent: "center", position: "relative", overflow: "hidden", paddingTop: "80px" }}>
+      <section style={{ minHeight: "100vh", display: "flex", flexDirection: "column", justifyContent: "center", position: "relative", overflow: "hidden", paddingTop: "116px" }}>
         <div className="hero-mesh" />
 
         {/* Ticker */}
@@ -146,7 +146,7 @@ export default async function Home() {
           </div>
         </div>
 
-        <div className="container" style={{ paddingTop: "80px" }}>
+        <div className="container" style={{ paddingTop: "116px" }}>
           <div style={{ maxWidth: "900px" }}>
             <div className="anim-fade-up" style={{ marginBottom: "24px" }}>
               <span style={{
