@@ -1,6 +1,8 @@
 import { createClient } from "@supabase/supabase-js"
 import Link from "next/link"
 
+export const dynamic = "force-dynamic"
+
 async function getFeaturedCenters() {
   try {
     const supabase = createClient(
