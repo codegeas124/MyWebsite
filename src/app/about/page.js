@@ -41,7 +41,7 @@ export default function AboutPage() {
               color: "var(--text-secondary)", fontSize: "clamp(16px, 2vw, 22px)",
               lineHeight: "1.6", maxWidth: "560px", margin: "32px 0 0",
             }}>
-              Fitnara exists to connect every Indian with world-class fitness — gyms, yoga, pilates, crossfit, boxing, dance, swimming and beyond. One platform. All of India.
+              The mission is to make everyone Fit. Fitnara exists to connect every Indian with world-class fitness — gyms, yoga, pilates, crossfit, boxing, dance, swimming and beyond with One platform.
             </p>
           </div>
         </div>
@@ -102,7 +102,7 @@ export default function AboutPage() {
               ["500+", "Centers Listed"],
               ["50+", "Cities"],
               ["8", "Categories"],
-              ["2025", "Founded"],
+              ["2026", "Founded"],
             ].map(([num, label]) => (
               <div key={label}>
                 <div className="stat-num">{num}</div>
