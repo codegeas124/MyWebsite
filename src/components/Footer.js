@@ -88,7 +88,7 @@ export default function Footer() {
               Company
             </p>
             <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-              {[["About", "/about"], ["Explore", "/explore"], ["Contact", "mailto:hello@fitnara.in"]].map(([label, href]) => (
+              {[["About", "/about"], ["Explore", "/explore"], ["Contact", "mailto:utsav.utsavsingh.singh@gmail.com"]].map(([label, href]) => (
                 <Link key={label} href={href} className="footer-link">{label}</Link>
               ))}
             </div>
